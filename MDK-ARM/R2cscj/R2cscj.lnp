@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"r2cscj\startup_stm32f427xx.o"
+"r2cscj\cscj.o"
+"r2cscj\main.o"
+"r2cscj\gpio.o"
+"r2cscj\tim.o"
+"r2cscj\stm32f4xx_it.o"
+"r2cscj\stm32f4xx_hal_msp.o"
+"r2cscj\stm32f4xx_hal_tim.o"
+"r2cscj\stm32f4xx_hal_tim_ex.o"
+"r2cscj\stm32f4xx_hal_rcc.o"
+"r2cscj\stm32f4xx_hal_rcc_ex.o"
+"r2cscj\stm32f4xx_hal_flash.o"
+"r2cscj\stm32f4xx_hal_flash_ex.o"
+"r2cscj\stm32f4xx_hal_flash_ramfunc.o"
+"r2cscj\stm32f4xx_hal_gpio.o"
+"r2cscj\stm32f4xx_hal_dma_ex.o"
+"r2cscj\stm32f4xx_hal_dma.o"
+"r2cscj\stm32f4xx_hal_pwr.o"
+"r2cscj\stm32f4xx_hal_pwr_ex.o"
+"r2cscj\stm32f4xx_hal_cortex.o"
+"r2cscj\stm32f4xx_hal.o"
+"r2cscj\stm32f4xx_hal_exti.o"
+"r2cscj\system_stm32f4xx.o"
+--strict --scatter "R2cscj\R2cscj.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "R2cscj.map" -o R2cscj\R2cscj.axf
